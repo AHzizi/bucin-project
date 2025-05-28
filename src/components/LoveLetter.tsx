@@ -5,23 +5,24 @@ export const LoveLetter: React.FC = () => {
   const [text, setText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const letterRef = useRef<HTMLDivElement>(null);
-  
-  const loveLetterContent = `My dearest Ainul Ma'rifah,
 
-As we celebrate our first anniversary, I find myself overwhelmed with emotions and gratitude for having you in my life. This past year has been filled with countless beautiful moments, deep conversations, shared dreams, and a love that grows stronger each day.
+  // Hapus "Dari Miftakul Azizi" dari bagian awal
+  const loveLetterContent = `Ainul Ma'rifah Tersayang,
 
-You've brought so much joy, laughter, and meaning into my life. Your smile brightens my darkest days, your kindness inspires me to be better, and your love gives me strength I never knew I had.
+Saat kita merayakan ulang tahun pertama hubungan kita, aku merasa sangat terharu dan bersyukur karena memilikimu dalam hidupku. Tahun lalu penuh dengan momen-momen indah yang tak terhitung jumlahnya, percakapan yang mendalam, mimpi bersama, dan cinta yang tumbuh semakin kuat setiap hari.
 
-I cherish every moment we've spent together - from our first date to our quiet evenings at home, from our adventures to our simple walks hand in hand. Each memory with you is a treasure I hold close to my heart.
+Kamu telah membawa begitu banyak kegembiraan, tawa, dan makna dalam hidupku. Senyummu mencerahkan hari-hari tergelapku, kebaikanmu menginspirasiku untuk menjadi lebih baik, dan cintamu memberiku kekuatan yang tidak pernah kuduga sebelumnya.
 
-Today, I want to promise you that I'll continue to love you, support you, and stand by your side through all of life's journeys. I look forward to creating countless more beautiful memories with you.
+Aku menghargai setiap momen yang telah kita lalui bersama - dari kencan pertama kita hingga malam-malam tenang, dari petualangan kita hingga jalan-jalan sederhana kita sambil bergandengan tangan. Setiap kenangan bersamamu adalah harta yang kusimpan erat di hatiku.
 
-Thank you for being you, for loving me, and for making this past year the most wonderful of my life.
+Hari ini, aku ingin berjanji padamu bahwa aku akan terus mencintaimu, mendukungmu, dan mendampingimu dalam setiap perjalanan hidup. Aku berharap dapat menciptakan kenangan indah yang tak terhitung jumlahnya bersamamu.
 
-Happy first anniversary, my love.
+Terima kasih telah menjadi dirimu sendiri, mencintaiku, dan membuat tahun lalu menjadi tahun terindah dalam hidupku.
 
-With all my heart,
-Yours forever`;
+Happy first anniversary, Cintakuu.
+
+Dengan Sepenuh Hatiku,
+Untukmu Selamanya`;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,7 +45,7 @@ Yours forever`;
     };
   }, []);
 
-  // Typewriter effect
+  // Efek ketik
   useEffect(() => {
     if (!isVisible) return;
 
@@ -52,7 +53,7 @@ Yours forever`;
       const timeout = setTimeout(() => {
         setText(loveLetterContent.substring(0, currentIndex + 1));
         setCurrentIndex(currentIndex + 1);
-      }, 25); // Speed of typing
+      }, 25);
 
       return () => clearTimeout(timeout);
     }
@@ -67,7 +68,9 @@ Yours forever`;
           ></div>
           
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-pink-600 text-center handwritten">From My Heart to Yours</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-pink-600 text-center handwritten">
+             Dari Lubuk Hatiku Yang Paling Dalam
+            </h2>
             
             <div className="love-letter prose prose-lg max-w-none">
               {text.split('\n\n').map((paragraph, index) => (
@@ -78,8 +81,15 @@ Yours forever`;
                   {paragraph}
                 </p>
               ))}
+
+              {/* Tampilkan tanda tangan setelah semua teks selesai diketik */}
+              {currentIndex === loveLetterContent.length && (
+                <div className="text-pink-600 text-xl handwritten mt-12 text-right">
+                  Dari Miftakul Azizi
+                </div>
+              )}
             </div>
-            
+
             <div className="mt-8 text-center">
               <div className="inline-block">
                 <svg 
@@ -96,6 +106,7 @@ Yours forever`;
                 </svg>
               </div>
             </div>
+
           </div>
         </div>
       </div>

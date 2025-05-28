@@ -51,8 +51,14 @@ export const HeroSection: React.FC = () => {
       <div className={`absolute bottom-20 left-10 float delay-400 ${isVisible ? 'fade-in delay-800' : 'opacity-0'}`}>
         <div className="text-pink-400 text-4xl">❀</div>
       </div>
+      <div className={`absolute top-20 left-10 float delay-400 ${isVisible ? 'fade-in delay-800' : 'opacity-0'}`}>
+        <div className="text-pink-400 text-4xl">❀</div>
+      </div>
       
       <div className={`absolute top-1/4 left-1/6 float delay-600 ${isVisible ? 'fade-in delay-600' : 'opacity-0'}`}>
+        <div className="text-pink-200 text-3xl">❀</div>
+      </div>
+      <div className={`absolute bottom-1/4 left-1/6 float delay-600 ${isVisible ? 'fade-in delay-600' : 'opacity-0'}`}>
         <div className="text-pink-200 text-3xl">❀</div>
       </div>
     </section>

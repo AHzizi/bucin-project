@@ -51,7 +51,7 @@ export const SurpriseButton: React.FC = () => {
           
           <Heart className="text-pink-500 mx-auto mb-6 w-16 h-16 float" />
           
-          <h2 className="text-3xl font-bold mb-6 text-pink-600 handwritten">A Special Message For You</h2>
+          <h2 className="text-3xl font-bold mb-6 text-pink-600 handwritten">Ada Sesuatu Yang Spesial Untukmu Saayang</h2>
           
           <p className="text-gray-700 mb-8">
             I've prepared something special just for you, my love. Are you ready for a surprise?

@@ -10,18 +10,14 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({ isPlaying, onToggle })
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Create audio element
     if (!audioRef.current) {
-      audioRef.current = new Audio();
-      audioRef.current.src = '/romantic-music.mp3'; // This is a placeholder - users need to add their own music file
+      audioRef.current = new Audio('/halTerindah.mp3');
       audioRef.current.loop = true;
+      // Jangan di-mute!
     }
-
-    // Play or pause based on isPlaying prop
+  
     if (isPlaying) {
       const playPromise = audioRef.current.play();
-      
-      // Handle autoplay restrictions
       if (playPromise !== undefined) {
         playPromise.catch(error => {
           console.error('Autoplay prevented:', error);
@@ -30,8 +26,7 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({ isPlaying, onToggle })
     } else {
       audioRef.current.pause();
     }
-
-    // Cleanup
+  
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
@@ -39,6 +34,7 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({ isPlaying, onToggle })
       }
     };
   }, [isPlaying]);
+  
 
   return (
     <button 

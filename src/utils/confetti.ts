@@ -144,3 +144,4 @@ export default function confetti() {
     }
   }, 8000);
 }
+

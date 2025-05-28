@@ -31,7 +31,7 @@ export const FallingPetals: React.FC = () => {
 
     // Initialize petals
     const initPetals = () => {
-      const petalsCount = Math.max(20, Math.floor(window.innerWidth / 50)); // Responsive count
+      const petalsCount = Math.max(50, Math.floor(window.innerWidth / 20)); // Responsive count
       petalsRef.current = [];
 
       for (let i = 0; i < petalsCount; i++) {

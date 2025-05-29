@@ -54,14 +54,14 @@ export const SurpriseButton: React.FC = () => {
           <h2 className="text-3xl font-bold mb-6 text-pink-600 handwritten">Ada Sesuatu Yang Spesial Untukmu Saayang</h2>
           
           <p className="text-gray-700 mb-8">
-            I've prepared something special just for you, my love. Are you ready for a surprise?
+            Aku sudah menyiapkan sesuatu yang istimewa untukmu, sayangku. Apakah kamu siap untuk kejutan?
           </p>
           
           <button 
             className="romantic-button group relative inline-flex items-center justify-center"
             onClick={handleSurpriseClick}
           >
-            <span className="mr-2">Click for a Surprise</span> 
+            <span className="mr-2">Klik Akuu 😊</span> 
             <span className="transform group-hover:scale-125 transition-transform">💝</span>
           </button>
         </div>
@@ -77,16 +77,16 @@ export const SurpriseButton: React.FC = () => {
             <h3 className="text-3xl font-bold mb-4 text-pink-600 handwritten">I Love You!</h3>
             
             <p className="text-xl mb-6">
-              One year of loving you has been the most beautiful journey of my life. 
-              You make every day special with your smile, your kindness, and your love.
+              Satu tahun mencintaimu adalah perjalanan terindah dalam hidupku.
+              Kamu membuat setiap hari menjadi istimewa dengan senyummu, kebaikanmu, dan cintamu.
             </p>
             
             <p className="text-xl mb-8">
-              Thank you for being the most amazing partner. Here's to many more 
-              years of love, laughter, and happiness together!
+              Terima kasih telah menjadi bagian dari diriku yang paling mengagumkan.
+              Semoga kita terus bersama selama bertahun-tahun penuh cinta, tawa, dan kebahagiaan.
             </p>
             
-            <div className="text-3xl handwritten font-bold text-pink-500">Forever Yours ❤️</div>
+            <div className="text-3xl handwritten font-bold text-pink-500">Saayang Ainul❤️</div>
           </div>
         </div>
       </div>

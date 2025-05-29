@@ -2,38 +2,43 @@ import { ImageData } from '../types';
 
 export const images: ImageData[] = [
   {
-    url: "https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    caption: "Our First Date",
-    date: "April 2023"
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748486442/IMG20241231125354_e3nuag.jpg",
+    caption: "Mushola Wisata Pagilaran",
+    date: "31 December 2024"
   },
   {
-    url: "https://images.pexels.com/photos/1415131/pexels-photo-1415131.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    caption: "Summer Adventures",
-    date: "June 2023"
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748486477/IMG_20250409_165907_yrevko.jpg",
+    caption: "Pulang Sekolah, Tlahab",
+    date: "9 April 2025"
   },
   {
-    url: "https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    caption: "Romantic Dinner",
-    date: "August 2023"
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748495176/2_fctif2.png",
+    caption: "Kebun Teh Wisata Pagilaran",
+    date: "31 Desember 2024"
   },
   {
-    url: "https://images.pexels.com/photos/842958/pexels-photo-842958.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    caption: "Autumn Walks",
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748495211/4_fogsgd.png",
+    caption: "Kebun Teh Wisata Pagilaran",
     date: "October 2023"
   },
   {
-    url: "https://images.pexels.com/photos/1480807/pexels-photo-1480807.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    caption: "Winter Wonderland",
-    date: "December 2023"
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748495196/3_d9pn6s.png",
+    caption: "Kebun Teh Wisata Pagilaran",
+    date: "31 Desember 2024"
   },
   {
-    url: "https://images.pexels.com/photos/1415226/pexels-photo-1415226.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    caption: "New Year's Celebration",
-    date: "January 2024"
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748495869/Untitled_design_tvjbjv.png",
+    caption: ">/////<",
+    date: "Today"
   },
   {
-    url: "https://images.pexels.com/photos/1415131/pexels-photo-1415131.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    caption: "Valentine's Day",
-    date: "February 2024"
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748495175/1_ycicmf.png",
+    caption: "Candid Kebun Teh Wisata Pagilaran",
+    date: "31 Desember 2024"
+  },
+  {
+    url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748511824/Untitled_design_1_cq4abc.png",
+    caption: "Candid Kebun Teh Wisata Pagilaran",
+    date: "31 Desember 2024"
   }
 ];

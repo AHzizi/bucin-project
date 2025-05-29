@@ -24,11 +24,11 @@ export const HeroSection: React.FC = () => {
         </h1>
         
         <h2 className={`text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-pink-600 handwritten ${isVisible ? 'fade-in delay-400' : 'opacity-0'}`}>
-          Ainul Ma'rifah ❤️
+          <a href="https://www.instagram.com/ainul_marifah013/" target="_blank" rel="noopener noreferrer">Ainul Ma'rifah ❤️</a>
         </h2>
         
         <p className={`text-xl md:text-2xl text-gray-700 italic mb-8 max-w-xl mx-auto ${isVisible ? 'slide-in-up delay-800' : 'opacity-0'}`}>
-          "A year of love, laughter, and beautiful memories together"
+          "Setahun penuh cinta, tawa, dan kenangan indah bersamamu"
         </p>
         
         <div className={`mt-8 flex justify-center ${isVisible ? 'fade-in delay-1000' : 'opacity-0'}`}>
@@ -52,7 +52,7 @@ export const HeroSection: React.FC = () => {
         <div className="text-pink-400 text-4xl">❀</div>
       </div>
       <div className={`absolute top-20 left-10 float delay-400 ${isVisible ? 'fade-in delay-800' : 'opacity-0'}`}>
-        <div className="text-pink-400 text-4xl">❀</div>
+        <div className="text-pink-400 text-xl handwritten"><a href="https://www.instagram.com/miftakulazizi/" target="_blank" rel="noopener noreferrer">Dari Miftakul Azizi</a></div>
       </div>
       
       <div className={`absolute top-1/4 left-1/6 float delay-600 ${isVisible ? 'fade-in delay-600' : 'opacity-0'}`}>

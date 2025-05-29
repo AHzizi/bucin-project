@@ -85,7 +85,8 @@ Untukmu Selamanya`;
               {/* Tampilkan tanda tangan setelah semua teks selesai diketik */}
               {currentIndex === loveLetterContent.length && (
                 <div className="text-pink-600 text-xl handwritten mt-12 text-right">
-                  Dari Miftakul Azizi
+                  Dari Miftakul Azizi <br />
+                  Orang Ganteng dan Intelek
                 </div>
               )}
             </div>

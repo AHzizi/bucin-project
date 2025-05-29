@@ -38,7 +38,7 @@ export const PhotoSlider: React.FC<PhotoSliderProps> = ({ images }) => {
   const startAutoPlay = () => {
     autoPlayRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 10000);
   };
 
   const stopAutoPlay = () => {

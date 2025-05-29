@@ -40,5 +40,10 @@ export const images: ImageData[] = [
     url: "https://res.cloudinary.com/dntbcmcc3/image/upload/v1748511824/Untitled_design_1_cq4abc.png",
     caption: "Candid Kebun Teh Wisata Pagilaran",
     date: "31 Desember 2024"
+  },
+  {
+    url: "https://res.cloudinary.com/dntbcmcc3/video/upload/v1748513626/Untitled_video_-_Made_with_Clipchamp_z3x4hk.mp4",
+    caption: "Candid Kebun Teh Wisata Pagilaran",
+    date: "31 Desember 2024"
   }
 ];
